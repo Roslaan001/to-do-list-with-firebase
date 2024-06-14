@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="task-form">
+    <input type="text" id="task-input" placeholder="Add a new task" />
+    <button id="add-task-button">Add Task Now</button>
+  </div>
+  
+  <!-- Task list -->
+  <ul id="task-list"></ul>
+  <div id="loading-indicator" style="display:none;">Loading...</div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
